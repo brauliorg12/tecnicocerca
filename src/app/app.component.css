@@ -1,0 +1,45 @@
+.img_logo {
+  height: 100px;
+  transition: 500ms;
+}
+
+.navbar-brand {
+  background: #0098d9;
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.sticky .img_logo {
+  height: 40px;
+  transition: 500ms;
+}
+
+@media (max-width: 800px) {
+  .img_logo {
+    height: 40px;
+  }
+
+  .sticky .img_logo {
+    height: 40px;
+    transition: 500ms;
+  }
+
+  .team-style-eleven .team-image img {
+    height: 300px;
+    object-fit: contain;
+  }
+
+  .navbar-brand {
+    background: #0098d9;
+    padding: 0.5rem;
+    border-radius: 15px;
+  }
+}
+
+.carousel-item {
+  height: 100vh !important;
+}
+
+.footer-logo img {
+  height: 100px;
+}
