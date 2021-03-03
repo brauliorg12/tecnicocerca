@@ -1,17 +1,13 @@
 .img_logo {
   height: 100px;
   transition: 500ms;
+  position: absolute;
 }
 
 .navbar-brand {
   background: #0098d9;
   padding: 1rem;
   border-radius: 15px;
-}
-
-.sticky .img_logo {
-  height: 40px;
-  transition: 500ms;
 }
 
 @media (max-width: 800px) {

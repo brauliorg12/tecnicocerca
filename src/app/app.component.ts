@@ -38,7 +38,6 @@ export class AppComponent {
     public formBuilder: FormBuilder,
     private dbservice: DbService
   ) {
-    window.addEventListener('scroll', this.scroll, true);
 
     this.Form = this.formBuilder.group({
       number: new FormControl('', Validators.compose([
@@ -59,79 +58,6 @@ export class AppComponent {
     });
   }
 
-  addTag(tag: string): void {
-    if (this.Form.get('number').valid && this.disponible) {
-      this.loading = '';
-
-      const findIndex = this.tags.findIndex(p => p === tag);
-
-      if (findIndex === -1) {
-        if (tag[tag.length - 1] === ',' || tag[tag.length - 1] === ' ') {
-          tag = tag.slice(0, -1);
-          this.Form.controls.number.setValue('');
-          this.Form.controls.tag.setValue(this.tags);
-        }
-        if (tag.length > 0 && !find(this.tags, tag)) {
-          this.tags.push(tag);
-          this.Form.controls.number.setValue('');
-          this.Form.controls.tag.setValue(this.tags);
-        }
-      }
-    }
-  }
-
-  removeTag(tag?: string): void {
-    if (!!tag) {
-      pull(this.tags, tag);
-    } else {
-      this.tags.splice(-1);
-    }
-  }
-
-  checkNumber(): void {
-    this.loading = '';
-    if (this.Form.get('number').valid) {
-      this.loading = 'loading';
-      this.disponible = false;
-
-      this.dbservice.checkNumero(this.Form.get('number').value).toPromise().then((resp: any) => {
-        // console.log(resp);
-
-        if (resp.ok) {
-          if (resp.result === 'disponible') {
-            this.disponible = true;
-            this.loading = 'ok';
-          } else {
-            this.disponible = false;
-            this.loading = 'nodisponible';
-          }
-        }
-
-      });
-    }
-  }
-
-  checkEmail(): void {
-    if (this.Form.get('email').valid) {
-      this.loadingE = 'loading';
-      this.disponibleE = false;
-
-      this.dbservice.checkEmail(this.Form.get('email').value).toPromise().then((resp: any) => {
-        // console.log(resp);
-
-        if (resp.ok) {
-          if (resp.result === 'disponible') {
-            this.disponibleE = true;
-            this.loadingE = 'ok';
-          } else {
-            this.disponibleE = false;
-            this.loadingE = 'nodisponible';
-          }
-        }
-
-      });
-    }
-  }
 
   alert(titles: string, texts: string, icons: any): void {
     Swal.fire({
@@ -172,17 +98,5 @@ export class AppComponent {
       });
     }
   }
-
-
-  scroll = (event): void => {
-    const sc = event.target.scrollingElement.scrollTop;
-    if (sc >= 300) {
-      this.element = true;
-    }
-    else {
-      this.element = false;
-    }
-  }
-
 
 }
