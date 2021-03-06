@@ -2,12 +2,24 @@
   height: 100px;
   transition: 500ms;
   position: absolute;
+  margin-left: 1rem;
 }
 
 .navbar-brand {
-  background: #0098d9;
-  padding: 1rem;
+  display: contents;
   border-radius: 15px;
+}
+
+.img_home {
+  max-height: 580px;
+}
+
+.p_text {
+  font-size: 20px;
+}
+
+i {
+  color: #0098d9;
 }
 
 @media (max-width: 800px) {
@@ -24,16 +36,6 @@
     height: 300px;
     object-fit: contain;
   }
-
-  .navbar-brand {
-    background: #0098d9;
-    padding: 0.5rem;
-    border-radius: 15px;
-  }
-}
-
-.carousel-item {
-  height: 100vh !important;
 }
 
 .footer-logo img {
