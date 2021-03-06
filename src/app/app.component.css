@@ -1,8 +1,9 @@
 .img_logo {
   height: 100px;
   transition: 500ms;
-  position: absolute;
-  margin-left: 1rem;
+  /*transition: 500ms;
+  position: absolute; 
+  margin-left: 1rem;*/
 }
 
 .navbar-brand {
@@ -14,6 +15,10 @@
   max-height: 580px;
 }
 
+#carouselThree {
+  background: #797c77 url(src/assets/images/fondo_rifa.png) repeat top left;
+}
+
 .p_text {
   font-size: 20px;
 }
@@ -22,20 +27,27 @@ i {
   color: #0098d9;
 }
 
+.logo_grid {
+  align-content: center;
+  justify-items: center;
+  display: grid;
+}
+
 @media (max-width: 800px) {
   .img_logo {
-    height: 40px;
-  }
-
-  .sticky .img_logo {
-    height: 40px;
+    padding: 0.5rem;
     transition: 500ms;
   }
 
-  .team-style-eleven .team-image img {
+  .sticky .img_logo {
+    padding: 0.5rem;
+    transition: 500ms;
+  }
+
+  /* .team-style-eleven .team-image img {
     height: 300px;
     object-fit: contain;
-  }
+  } */
 }
 
 .footer-logo img {
