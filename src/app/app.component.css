@@ -16,7 +16,7 @@
 }
 
 .col_top {
-  background-color: #f9df03;
+  background-color: #FFC81E;
   width: 100%;
   padding: 0.5rem;
 }
@@ -35,11 +35,11 @@
 
 .p_text {
   font-size: 20px;
-  color: #FFBE10;
+  color: #bb8d10;
 }
 
 i {
-  color: #bb8d10;
+  color: #161616;
 }
 
 .logo_grid {
