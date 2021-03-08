@@ -1,7 +1,7 @@
 /*! * Bootstrap v4.1.0 (https://getbootstrap.com/) * Copyright 2011-2018 The Bootstrap Authors * Copyright 2011-2018 Twitter, Inc. * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
-  --blue: #0098D9;
+  --blue: #000000;
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
@@ -154,7 +154,7 @@ sup {
   top: -0.5em;
 }
 a {
-  color: #0098D9;
+  color: #000000;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -2259,8 +2259,8 @@ fieldset:disabled a.btn {
 .btn-primary.disabled,
 .btn-primary:disabled {
   color: #fff;
-  background-color: #0098D9;
-  border-color: #0098D9;
+  background-color: #000000;
+  border-color: #000000;
 }
 .btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active,
@@ -2499,10 +2499,10 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
 }
 .btn-outline-primary {
-  color: #0098D9;
+  color: #000000;
   background-color: transparent;
   background-image: none;
-  border-color: #0098D9;
+  border-color: #000000;
 }
 .btn-outline-primary:hover {
   color: #fff;
@@ -2760,7 +2760,7 @@ fieldset:disabled a.btn {
   background-color: transparent;
 }
 .btn-link:hover {
-  color: #0056b3;
+  color: #E9D103;
   text-decoration: underline;
   background-color: transparent;
   border-color: transparent;

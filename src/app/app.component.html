@@ -24,23 +24,52 @@
 
     <div id="carouselThree" class="carousel slide">
 
-        <div class="carousel-inner">
+        <div class="header-row" id="header-row" style="padding: 0px; overflow:hidden;">
+            <!-- container-fluid is the same as container but spans a wider viewport, 
+        it still has padding though so you need to remove this either by adding 
+        another class with no padding or inline as I did below -->
+            <div class="container-fluid" style="padding: 0px;">
+                <div class="row">
+                    <!-- You originally has it set up for two columns, remove the second 
+        column as it is unneeded and set the first to always span all 12 columns 
+        even when at its smallest (xs). Set the overflow to hidden so no matter 
+        the height of your image it will never show outside this div-->
+                    <div class="col-xs-12">
+                        <a class="navbar-brand logo">
+                            <!-- place your image here -->
+                            <img src="assets/images/banner-web-china-1920x600.jpg" alt="company logo"
+                                style="width: 100%;">
+                        </a>
+                    </div>
+
+                    <div class="col-xs-12 col_top text-center">
+                        <h4 class="title">Importador Mayorista en Buenos Aires, Argentina.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--<div class="carousel-inner">
             <div class="carousel-item active">
 
                 <div class="container">
                     <div class="row justify-content-center text-center">
-                        <div class="col-lg-4 col-md-4 logo_grid">
+                        <div class="col-lg-12 col-md-12">
+                            <img src="assets/images/banner-web-china-1920x600.jpg" alt="Tecnicocerca" class="img_home">
+                        </div>
+                         <div class="col-lg-4 col-md-4 logo_grid">
                             <img src="https://tecnicocerca.com/images/logo-tc.png?crc=395163101" alt="Logo"
                                 class="img_logo">
                         </div>
 
                         <div class="col-lg-8 col-md-8">
                             <img src="assets/images/banner-web-china-1920x600.jpg" alt="Tecnicocerca" class="img_home">
-                        </div>
+                        </div> 
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
 
     </div>
 </section>
@@ -53,7 +82,9 @@
 <section id="contact" class="contact-area">
     <div class="container">
         <div class="row justify-content-center">
+
             <div class="col-lg-6 col-md-6">
+
                 <div class="section-title text-center pb-10">
                     <h3 class="title">¿SOS TÉCNICO?</h3>
                     <p class="text p_text">
@@ -71,7 +102,7 @@
                     </p>
 
                     <br>
-                    Si querés que te mandemos clientes, no dudes en registrarte
+                    <span class="span_home">Si querés que te mandemos clientes, no dudes en registrarte</span>
                 </div>
             </div>
 
