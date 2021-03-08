@@ -1,9 +1,6 @@
 .img_logo {
   height: 100px;
   transition: 500ms;
-  /*transition: 500ms;
-  position: absolute; 
-  margin-left: 1rem;*/
 }
 
 .navbar-brand {
