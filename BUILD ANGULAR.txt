@@ -1,0 +1,4 @@
+ng build --prod --aot --output-hashing=none
+
+Para admin, guardarlo en una carpeta llamada admin
+ng build --prod --base-href="/admin/" --aot
