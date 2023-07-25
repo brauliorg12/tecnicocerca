@@ -1,0 +1,3 @@
+https://angular.io/cli/build
+
+ng build --aot --build-optimizer --configuration production
